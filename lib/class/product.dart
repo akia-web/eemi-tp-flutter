@@ -2,8 +2,8 @@ class ProductModel {
   final String id;
   final String name;
   final String description;
-  final String price;
-  final List image;
+  final double price;
+  final String image;
 
   const ProductModel({
     required this.id,
@@ -15,11 +15,11 @@ class ProductModel {
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
-      id: json['id'],
-      name: json['name'],
-      description: json['description'],
-      price: json['price'],
-      image: json['image'],
+      id: json['id']?? '',
+      name: json['name']?? '',
+      description: json['description']?? '',
+      price: json['price']?? 0,
+      image: json['image']?? '',
     );
   }
 }
