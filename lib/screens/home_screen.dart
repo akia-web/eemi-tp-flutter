@@ -131,20 +131,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () async {
-      //     final created = await Navigator.of(context).push(
-      //       MaterialPageRoute(
-      //         builder: (context) => const CreateProductScreen(),
-      //       ),
-      //     );
-      //     if (created == true) {
-      //       fetchProducts();
-      //     }
-      //   },
-      //   tooltip: 'Ajouter un produit',
-      //   child: const Icon(Icons.add),
-      // ),
     );
   }
 }
